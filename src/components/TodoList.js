@@ -10,7 +10,6 @@ class TodoList extends React.Component {
       <>
         {
           this.props.todos.map(todo => {
-            console.log(todo);
             return (
               <Todo
                 key={todo.id}
@@ -20,7 +19,9 @@ class TodoList extends React.Component {
             );
           })
         }
-        <TodoForm addTodo={this.props.addTodo}/>
+        <TodoForm
+          clearCompleted={this.props.clearCompleted}
+          addTodo={this.props.addTodo}/>
       </>
     );
   }
