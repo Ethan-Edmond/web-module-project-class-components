@@ -1,12 +1,6 @@
 import React from 'react';
 import TodoList from "./components/TodoList";
 
-// const taskFormat = {
-//   task: "TASK NAME",
-//   id: Date.now(),
-//   completed: false
-// };
-
 class App extends React.Component {
   constructor() {
     super();

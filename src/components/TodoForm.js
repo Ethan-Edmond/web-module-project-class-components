@@ -14,6 +14,7 @@ class TodoForm extends React.Component {
     });
   }
   handleAdd = (e) => {
+    e.preventDefault();
     this.props.addTodo(this.state.title);
   }
   handleClear = (e) => {
@@ -22,8 +23,15 @@ class TodoForm extends React.Component {
   render(){
     return (
       <>
-        <input onChange={this.handleChange} placeholder="todos go here" type="text"/>
-        <button onClick={this.handleAdd}>Add Todo</button>
+        <form onSubmit={this.handleAdd}>
+          <input
+            value={this.state.title}
+            onChange={this.handleChange}
+            placeholder="todos go here"
+            type="text"
+          />
+          <button>Add Todo</button>
+        </form>
         <button onClick={this.handleClear}>Clear Completed</button>
       </>
     );
