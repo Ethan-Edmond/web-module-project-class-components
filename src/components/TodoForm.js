@@ -15,7 +15,9 @@ class TodoForm extends React.Component {
   }
   handleAdd = (e) => {
     e.preventDefault();
-    this.props.addTodo(this.state.title);
+    if (this.state.title !== ""){
+      this.props.addTodo(this.state.title);
+    }
   }
   handleClear = (e) => {
     this.props.clearCompleted();
