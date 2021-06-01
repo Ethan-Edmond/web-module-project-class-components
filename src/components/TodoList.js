@@ -7,7 +7,8 @@ import TodoForm from "./TodoForm";
 class TodoList extends React.Component {
   render(){
     return (
-      <>
+      <div className="app-form">
+        <div className="todo-container">
         {
           this.props.todos.map(todo => {
             return (
@@ -19,10 +20,11 @@ class TodoList extends React.Component {
             );
           })
         }
+        </div>
         <TodoForm
           clearCompleted={this.props.clearCompleted}
           addTodo={this.props.addTodo}/>
-      </>
+      </div>
     );
   }
 }
