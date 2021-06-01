@@ -1,0 +1,88 @@
+.App {
+    background-color: #efffef;
+    color: #654321;
+    padding: 2%;
+    overflow: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    background: white;
+    margin: 0 auto 2rem;
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 3px 3px #d0e5d0;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+.app-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form-container {
+    background: white;
+    width: 80%;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 3px 3px #d0e5d0;
+}
+
+button {
+    background: #654321;
+    border: 0;
+    border-radius: 0.3rem;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 3px 3px #efefef;
+    margin-left: 0.5rem;
+    border: 3px solid #654321;
+}
+
+button:hover {
+    background: white;
+    color: #654321;
+}
+
+form {
+    display: flex;
+}
+input {
+    border: 3px solid #654321;
+    border-radius: 0.3rem;
+    color: black;
+    font-weight: 500;
+}
+
+.todo-container {
+    width: 100%;
+    padding: 0 7% 0 10%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.todo {
+    background: white;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 0.3rem 1.3rem;
+    border: 3px solid white;
+    border-radius: 0.5rem;
+    box-shadow: 2px 3px 3px #d0e5d0;
+}
+
+.todo:hover {
+    border-color: #654321;
+}
+
+.todo h4 {
+    margin: 0;
+}
